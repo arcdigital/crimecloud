@@ -51,8 +51,7 @@ function handleText(textNode)
 
 	if (v.toLowerCase().indexOf("crimecloud") == -1)
 	{
-		v = v.replace(/Cloud/g, "Crime");
-		v = v.replace(/cloud/g, "crime");
+		v = v.replace(/(?!=c)loud/gi, "rime");
 		textNode.nodeValue = v;
 	}
 }
